@@ -104,6 +104,8 @@ Ablation study on learning semantic information.
 
 ### Compare to recent works
 
+\[[AdaIn](https://github.com/naoto0804/pytorch-AdaIN)\] \[[WCT](https://github.com/sunshineatnoon/PytorchWCT)\] \[[AvatarNet](https://github.com/LucasSheng/avatar-net)\] \[Ours\]
+
 <p align='center'>
   <img src='images/compare_to_recent/1.jpg' width='200'>
   <img src='images/compare_to_recent/2.png' width='200'>
