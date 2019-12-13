@@ -6,7 +6,7 @@ In this work, we aim to retain the content's details as definable objects (seman
 
 | Date        | News                                                      |
 | ----------- | --------------------------------------------------------- |
-| 2019/12/13  | Update more results, we will update videos and demo soon. |
+| 2019/12/14  | Update more results, we will update videos and demo soon. |
 
 
 ## Ablation Studies
@@ -15,7 +15,7 @@ In this work, we aim to retain the content's details as definable objects (seman
 From original network to our architecture.
 
 <p align='center'>
-  <img src='images/ori_to_ours_1.png'>
+  <img src='images/ori_to_ours_3.png'>
 </p>
 
 Ablation study on learning semantic information.
@@ -28,30 +28,47 @@ Ablation study on learning semantic information.
 
 ### Content
 
+Most of content images are collected from [Unsplash](https://unsplash.com/)
+
 <p align='center'>
-  <img src='images/content/o1.png' witdh=200>
-  <img src='images/content/o2.png' witdh=200>
-  <img src='images/content/o3.png' witdh=200>
-  <img src='images/content/o4.png' witdh=200>
-  <img src='images/content/o5.png' witdh=200>
-  <img src='images/content/o6.png' witdh=200>
-  <img src='images/content/o7.png' witdh=200>
-  <img src='images/content/o8.png' witdh=200>
-  <img src='images/content/o9.png' witdh=200>
-  <img src='images/content/o10.png' witdh=200>
-  <img src='images/content/o11.png' witdh=200>
-  <img src='images/content/o12.png' witdh=200>
-  <img src='images/content/o13.png' witdh=200>
-  <img src='images/content/o14.png' witdh=200>
-  <img src='images/content/o15.png' witdh=200>
-  <img src='images/content/o16.png' witdh=200>
-  <img src='images/content/o17.png' witdh=200>
-  <img src='images/content/o18.png' witdh=200>
-  <img src='images/content/o19.png' witdh=200>
-  <img src='images/content/o20.png' witdh=200>
-  <img src='images/content/o21.png' witdh=200>
-  <img src='images/content/o22.png' witdh=200>
-  <img src='images/content/o23.png' witdh=200>
+  <img src='images/content/o1.png' width='200'/>
+  <img src='images/content/o2.png' width='200'/>
+  <img src='images/content/o3.png' width='200'/>
+  <img src='images/content/o4.png' width='200'/>
+</p>
+
+<p align='center'>
+  <img src='images/content/o5.png' width='200'/>
+  <img src='images/content/o6.png' width='200'/>
+  <img src='images/content/o7.png' width='200'/>
+  <img src='images/content/o8.png' width='200'/>
+</p>
+
+<p align='center'>
+  <img src='images/content/o9.png' width='200'/>
+  <img src='images/content/o10.png' width='200'/>
+  <img src='images/content/o11.png' width='200'/>
+  <img src='images/content/o12.png' width='200'/>
+</p>
+
+<p align='center'>
+  <img src='images/content/o13.png' width='200'/>
+  <img src='images/content/o14.png' width='200'/>
+  <img src='images/content/o15.png' width='200'/>
+  <img src='images/content/o16.png' width='200'/>
+</p>
+
+<p align='center'>
+  <img src='images/content/o17.png' width='200'/>
+  <img src='images/content/o18.png' width='200'/>
+  <img src='images/content/o19.png' width='200'/>
+  <img src='images/content/o20.png' width='200'/>
+</p>
+
+<p align='center'>
+  <img src='images/content/o21.png' width='200'/>
+  <img src='images/content/o22.png' width='200'/>
+  <img src='images/content/o23.png' width='200'/>
 </p>
 
 ### Compare to Johnson's work + Instance Normalization
@@ -59,6 +76,8 @@ Ablation study on learning semantic information.
 [Source code](https://github.com/pytorch/examples/tree/master/fast_neural_style)
 
 \[Their work\] \[Ours\] \[Their work\] \[Ours\]
+
+  <img src='images/style/candy.jpg' width='200'/> : Candy
 
 <p align='center'>
   <img src='images/compare_to_john/candy/1.png' width='200'/>
@@ -81,12 +100,15 @@ Ablation study on learning semantic information.
   <img src='images/compare_to_john/candy/12.png' width='200'/>
 </p>
 
+  <img src='images/style/udnie.jpg' width='200'/> : Udnie
+
 <p align='center'>
   <img src='images/compare_to_john/udnie/1.png' width='200'/>
   <img src='images/compare_to_john/udnie/2.png' width='200'/>
   <img src='images/compare_to_john/udnie/3.png' width='200'/>
   <img src='images/compare_to_john/udnie/4.png' width='200'/>
 </p>
+
 
 <p align='center'>
   <img src='images/compare_to_john/udnie/5.png' width='200'/>
@@ -105,6 +127,8 @@ Ablation study on learning semantic information.
 ### Compare to recent works
 
 \[[AdaIn](https://github.com/naoto0804/pytorch-AdaIN)\] \[[WCT](https://github.com/sunshineatnoon/PytorchWCT)\] \[[AvatarNet](https://github.com/LucasSheng/avatar-net)\] \[Ours\]
+
+  <img src='images/style/candy.jpg' width='200'/> : Candy
 
 <p align='center'>
   <img src='images/compare_to_recent/1.jpg' width='200'>
@@ -133,6 +157,8 @@ Ablation study on learning semantic information.
   <img src='images/compare_to_recent/15.png' width='200'>
   <img src='images/compare_to_recent/16.png' width='200'>
 </p>
+
+  <img src='images/style/crop_abstract-girl-woman-hair.jpg' width='200'/> : Watercolor painting portrait of a woman
 
 <p align='center'>
   <img src='images/compare_to_recent/17.jpg' width='200'>
@@ -176,6 +202,8 @@ Ablation study on learning semantic information.
   <img src='images/compare_to_recent/40.png' width='200'>
 </p>
 
+  <img src='images/style/picasso_seated_nude_hr.jpg' width='200'/> : Seated Nude by Pablo Picasso
+
 <p align='center'>
   <img src='images/compare_to_recent/41.jpg' width='200'>
   <img src='images/compare_to_recent/42.png' width='200'>
@@ -218,6 +246,8 @@ Ablation study on learning semantic information.
   <img src='images/compare_to_recent/64.png' width='200'>
 </p>
 
+  <img src='images/style/rabbit-watercolor-painting-1522562419ejJ.jpg' width='200'/> : Watercolor painting of rabbit
+
 <p align='center'>
   <img src='images/compare_to_recent/65.jpg' width='200'>
   <img src='images/compare_to_recent/66.png' width='200'>
@@ -231,6 +261,8 @@ Ablation study on learning semantic information.
   <img src='images/compare_to_recent/71.png' width='200'>
   <img src='images/compare_to_recent/72.png' width='200'>
 </p>
+
+  <img src='images/style/sketch.png' width='200'/> : A sketch
 
 <p align='center'>
   <img src='images/compare_to_recent/73.jpg' width='200'>
@@ -294,6 +326,8 @@ Ablation study on learning semantic information.
   <img src='images/compare_to_recent/107.png' width='200'>
   <img src='images/compare_to_recent/108.png' width='200'>
 </p>
+
+  <img src='images/style/udnie.jpg' width='200'/> : Udnie
 
 <p align='center'>
   <img src='images/compare_to_recent/109.jpg' width='200'>
