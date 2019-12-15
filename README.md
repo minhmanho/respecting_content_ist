@@ -1,6 +1,6 @@
 # Respecting low-level components of content with skip connections and semantic information in image style transfer (CVMP'19)
 
-This repository is to support our Paper/DOI: https://doi.org/10.1145/3359998.3369403 .
+This repository is to support our Paper/DOI: [https://doi.org/10.1145/3359998.3369403](https://doi.org/10.1145/3359998.3369403).
 
 In this work, we aim to retain the content's details as definable objects (semantic information).
 
