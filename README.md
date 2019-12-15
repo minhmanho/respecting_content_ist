@@ -396,7 +396,7 @@ Most of the content images are collected from [Unsplash](https://unsplash.com/)
 
 ## License
 
-This repository (as well as its materials) is non-commercial and for research purposes only.
+This repository (as well as its materials) is for non-commercial uses and research purposes only.
 
 
 ## Contact
