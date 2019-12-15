@@ -1,4 +1,6 @@
-# Respecting low-level components of content with skipconnections and semantic information in image style transfer (CVMP'19)
+# Respecting low-level components of content with skip connections and semantic information in image style transfer (CVMP'19)
+
+This repository is to support our Paper/DOI: https://doi.org/10.1145/3359998.3369403 .
 
 In this work, we aim to retain the content's details as definable objects (semantic information).
 
@@ -6,10 +8,10 @@ In this work, we aim to retain the content's details as definable objects (seman
 
 | Date        | News                                                      |
 | ----------- | --------------------------------------------------------- |
-| 2019/12/14  | Update more results, we will update videos and demo soon. |
+| 2019/12/15  | Add additional results. |
 
 
-## Ablation Studies
+## Additional results for ablation studies
 
 
 From original network to our architecture.
@@ -24,11 +26,11 @@ Ablation study on learning semantic information.
   <img src='images/learn_semantic_1.png'>
 </p>
 
-## Results
+## Addtional comparison results
 
 ### Content
 
-Most of content images are collected from [Unsplash](https://unsplash.com/)
+Most of the content images are collected from [Unsplash](https://unsplash.com/)
 
 <p align='center'>
   <img src='images/content/o1.png' width='200'/>
@@ -391,3 +393,12 @@ Most of content images are collected from [Unsplash](https://unsplash.com/)
   <img src='images/compare_to_recent/143.png' width='200'>
   <img src='images/compare_to_recent/144.png' width='200'>
 </p>
+
+## License
+
+This repository (as well as its materials) is non-commercial and for research purposes only.
+
+
+## Contact
+
+If you have any suggestions, questions, or the use of these images infringe your copyrights/license, please contact me <man.hominh.6m@stu.hosei.ac.jp>. I will take action ASAP.
