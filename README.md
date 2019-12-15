@@ -11,20 +11,6 @@ In this work, we aim to retain the content's details as definable objects (seman
 | 2019/12/15  | Add additional results. |
 
 
-## Additional results for ablation studies
-
-
-From original network to our architecture.
-
-<p align='center'>
-  <img src='images/ori_to_ours_3.png'>
-</p>
-
-Ablation study on learning semantic information.
-
-<p align='center'>
-  <img src='images/learn_semantic_1.png'>
-</p>
 
 ## Addtional comparison results
 
