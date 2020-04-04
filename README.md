@@ -2,9 +2,9 @@
 
 [Man M. Ho](https://minhmanho.github.io/), [Jinjia Zhou](https://www.zhou-lab.info/jinjia-zhou), Yibo Fan.
 
-This repository is to support our Paper/DOI: [https://doi.org/10.1145/3359998.3369403](https://doi.org/10.1145/3359998.3369403).
+[\[ DEMO Video\]](), [\[Comparison Video\]]() -- Coming Soon
 
-In this work, we aim to retain the content's details as definable objects (semantic information).
+This repository is to support our Paper/DOI: [https://doi.org/10.1145/3359998.3369403](https://doi.org/10.1145/3359998.3369403).
 
 ## News
 
@@ -44,14 +44,14 @@ python run.py --img_folder <folder_dir> --model <model_dir>
 
 Run GUI DEMO:
 
-<img src='images/others/demo.png'/>
+<img src='images/others/demo.png' width='640'/>
 
 ```
 python run.py --img <img_dir> --model <model_dir> --auto_update
 ```
 
 If you have a powerful GPU, let's add *--auto_update* for the better experience.
-The application updates all changes automatically you make if *auto_update* is activated; otherwise, you have to click the button *Update*.
+The application will update all changes you make automatically if *auto_update* is activated; otherwise, you have to click the button \[*Update*\].
 
 ## Addtional comparison results
 
@@ -187,7 +187,7 @@ Most of the content images are collected from [Unsplash](https://unsplash.com/)
   <img src='images/compare_to_recent/16.png' width='200'>
 </p>
 
-  <img src='images/styleabstract_girl.jpg' width='200'/> : Watercolor painting portrait of a woman
+  <img src='images/style/abstract_girl.jpg' width='200'/> : Watercolor painting portrait of a woman
 
 <p align='center'>
   <img src='images/compare_to_recent/17.jpg' width='200'>
@@ -425,7 +425,22 @@ Most of the content images are collected from [Unsplash](https://unsplash.com/)
 
 This repository (as well as its materials) is for non-commercial uses and research purposes only.
 
+## Cite
+
+```
+@inproceedings{ho2019respecting,
+  title={Respecting low-level components of content with skip connections and semantic information in image style transfer},
+  author={Ho, Minh-Man and Zhou, Jinjia and Fan, Yibo},
+  booktitle={European Conference on Visual Media Production},
+  pages={1--9},
+  year={2019}
+}
+```
 
 ## Contact
 
 If you have any suggestions, questions, or the use of these images infringe your copyrights/license, please contact me <man.hominh.6m@stu.hosei.ac.jp>. I will take action ASAP.
+
+## Acknowledgements
+
+We refer the [Interactive Colorization](https://github.com/junyanz/interactive-deep-colorization) to build our demonstration. This work is supported by the State Key Laboratory of ASIC & System, Fudan University, China. 
