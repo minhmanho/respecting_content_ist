@@ -1,4 +1,6 @@
-# Respecting low-level components of content with skip connections and semantic information in image style transfer (CVMP'19)
+## Respecting low-level components of content with skip connections and semantic information in image style transfer (CVMP'19)
+
+[Man M. Ho](https://minhmanho.github.io/), [Jinjia Zhou](https://www.zhou-lab.info/jinjia-zhou), Yibo Fan.
 
 This repository is to support our Paper/DOI: [https://doi.org/10.1145/3359998.3369403](https://doi.org/10.1145/3359998.3369403).
 
@@ -8,9 +10,48 @@ In this work, we aim to retain the content's details as definable objects (seman
 
 | Date        | News                                                      |
 | ----------- | --------------------------------------------------------- |
+| 2020/04/04  | Code and trained models now available. |
 | 2019/12/15  | Add additional results. |
 
+## Environment Setup
+We run our DEMO on Anaconda Environment with following packages:
 
+- OpenCV
+- [PyTorch](https://pytorch.org/) >= 1.1.0
+- Qdarkstyle
+- PyQt5
+- Numpy
+
+
+## Get started
+
+Clone this repo:
+```bash
+git clone https://github.com/minhmanho/respecting_content_ist.git
+cd respecting_content_ist
+```
+
+Download models
+```
+bash ./fetch_models.sh
+```
+
+Stylize a folder of images:
+
+```
+python run.py --img_folder <folder_dir> --model <model_dir>
+```
+
+Run GUI DEMO:
+
+<img src='images/others/demo.png'/>
+
+```
+python run.py --img <img_dir> --model <model_dir> --auto_update
+```
+
+If you have a powerful GPU, let's add *--auto_update* for the better experience.
+The application updates all changes automatically you make if *auto_update* is activated; otherwise, you have to click the button *Update*.
 
 ## Addtional comparison results
 
@@ -146,7 +187,7 @@ Most of the content images are collected from [Unsplash](https://unsplash.com/)
   <img src='images/compare_to_recent/16.png' width='200'>
 </p>
 
-  <img src='images/style/crop_abstract-girl-woman-hair.jpg' width='200'/> : Watercolor painting portrait of a woman
+  <img src='images/styleabstract_girl.jpg' width='200'/> : Watercolor painting portrait of a woman
 
 <p align='center'>
   <img src='images/compare_to_recent/17.jpg' width='200'>
@@ -190,7 +231,7 @@ Most of the content images are collected from [Unsplash](https://unsplash.com/)
   <img src='images/compare_to_recent/40.png' width='200'>
 </p>
 
-  <img src='images/style/picasso_seated_nude_hr.jpg' width='200'/> : Seated Nude by Pablo Picasso
+  <img src='images/style/seated_nude.jpg' width='200'/> : Seated Nude by Pablo Picasso
 
 <p align='center'>
   <img src='images/compare_to_recent/41.jpg' width='200'>
@@ -234,7 +275,7 @@ Most of the content images are collected from [Unsplash](https://unsplash.com/)
   <img src='images/compare_to_recent/64.png' width='200'>
 </p>
 
-  <img src='images/style/rabbit-watercolor-painting-1522562419ejJ.jpg' width='200'/> : Watercolor painting of rabbit
+  <img src='images/style/rabbit_watercolor.jpg' width='200'/> : Watercolor painting of rabbit
 
 <p align='center'>
   <img src='images/compare_to_recent/65.jpg' width='200'>

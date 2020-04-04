@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>edit_widget</class>
+ <widget class="QWidget" name="edit_widget">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Interactive Widget</string>
+  </property>
+  <widget class="QSpinBox" name="brush_box">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>681</y>
+     <width>60</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>60</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="brush_label">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>680</y>
+     <width>211</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Back Ground</string>
+   </property>
+   <property name="margin">
+    <number>1</number>
+   </property>
+   <property name="indent">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tab_widget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>630</width>
+     <height>660</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="draw_tab">
+    <attribute name="title">
+     <string>Draw Table</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="info_tab">
+    <attribute name="title">
+     <string>Brush Info</string>
+    </attribute>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>30</y>
+     <width>630</width>
+     <height>640</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="size_box">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>680</y>
+     <width>60</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>60</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="done_button">
+   <property name="geometry">
+    <rect>
+     <x>1180</x>
+     <y>680</y>
+     <width>90</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Done</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
