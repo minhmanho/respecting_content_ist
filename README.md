@@ -2,7 +2,7 @@
 
 [Man M. Ho](https://minhmanho.github.io/), [Jinjia Zhou](https://www.zhou-lab.info/jinjia-zhou), Yibo Fan.
 
-[\[ DEMO Video\]](), [\[Comparison Video\]]() -- Coming Soon
+[\[ DEMO Video\]](https://www.youtube.com/watch?v=u0S-3AFA1Ro), [\[Comparison Video\]](https://www.youtube.com/watch?v=Q3iGoJzBTwk)
 
 This repository is to support our Paper/DOI: [https://doi.org/10.1145/3359998.3369403](https://doi.org/10.1145/3359998.3369403).
 
@@ -33,7 +33,7 @@ cd respecting_content_ist
 
 Download models
 ```
-bash ./fetch_models.sh
+bash ./models/fetch_models.sh
 ```
 
 Stylize a folder of images:
@@ -51,7 +51,7 @@ python run.py --img <img_dir> --model <model_dir> --auto_update
 ```
 
 If you have a powerful GPU, let's add *--auto_update* for the better experience.
-The application will update all changes you make automatically if *auto_update* is activated; otherwise, you have to click the button \[*Update*\].
+The application will update every change you make automatically if *auto_update* is activated; otherwise, you have to click the button \[*Update*\].
 
 ## Addtional comparison results
 
