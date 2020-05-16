@@ -11,17 +11,22 @@ def get_subsampler(_name, nchannels):
         "up_conv": nn.ConvTranspose2d(nchannels, nchannels, kernel_size=3, stride=2, padding=1, output_padding=1, bias=True),
     }[_name]
 
-class eLayer(nn.Module):
+class baseLayer(nn.Module):
     def __init__(self, nInputs, nOutputs, kernel_size=3, stride=1, padding=1, pooling=None):
-        super(eLayer, self).__init__()
-
-        self.pool = get_subsampler("down_" + pooling, nInputs) if pooling is not None else None
-
+        super(baseLayer, self).__init__()
         self.conv1 = nn.Conv2d(nInputs, nOutputs, kernel_size, stride, padding, bias=True)
         self.conv2 = nn.Conv2d(nOutputs, nOutputs, kernel_size, stride, padding, bias=True)
         self.ins1 = nn.InstanceNorm2d(nOutputs, affine=True)
         self.ins2 = nn.InstanceNorm2d(nOutputs, affine=True)
         self.relu = nn.LeakyReLU(0.1,True)
+    
+    def forward(self):
+        pass
+
+class eLayer(baseLayer):
+    def __init__(self, nInputs, nOutputs, kernel_size=3, stride=1, padding=1, pooling=None):
+        super().__init__(nInputs, nOutputs, kernel_size, stride, padding, pooling)
+        self.pool = get_subsampler("down_" + pooling, nInputs) if pooling is not None else None
 
     def forward(self, _input):
         X = _input
@@ -31,17 +36,10 @@ class eLayer(nn.Module):
         X = self.relu(self.ins2(self.conv2(X)))
         return X
 
-class dLayer(nn.Module):
-    def __init__(self, nInputs, nOutputs, kernel_size=3, stride=1, padding=1, upsampling=None):
-        super(dLayer, self).__init__()
-
-        self.upsample = get_subsampler("up_" + upsampling, nInputs) if upsampling is not None else None
-
-        self.conv1 = nn.Conv2d(nInputs, nOutputs, kernel_size, stride, padding, bias=True)
-        self.conv2 = nn.Conv2d(nOutputs , nOutputs, kernel_size, stride, padding, bias=True)
-        self.ins1 = nn.InstanceNorm2d(nOutputs, affine=True)
-        self.ins2 = nn.InstanceNorm2d(nOutputs, affine=True)
-        self.relu = nn.LeakyReLU(0.1,True)
+class dLayer(baseLayer):
+    def __init__(self, nInputs, nOutputs, kernel_size=3, stride=1, padding=1, pooling=None):
+        super().__init__(nInputs, nOutputs, kernel_size, stride, padding, pooling)
+        self.upsample = get_subsampler("up_" + pooling, nInputs) if pooling is not None else None
 
     def forward(self, _input, skip_feat, connect_weight=1.0):
         X = _input
