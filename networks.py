@@ -18,11 +18,11 @@ class SegInNet(nn.Module):
         self.enc6 = eLayer(512,512,kernel_size=3,stride=1,padding=1,pooling='max')
 
         ## Decoder
-        self.dec1 = dLayer(512,512,kernel_size=3,padding=1,upsampling='nearest')
-        self.dec2 = dLayer(512,256,kernel_size=3,padding=1,upsampling='nearest')
-        self.dec3 = dLayer(256,128,kernel_size=3,padding=1,upsampling='nearest')
-        self.dec4 = dLayer(128,64,kernel_size=3,padding=1,upsampling='nearest')
-        self.dec5 = dLayer(64,32,kernel_size=3,padding=1,upsampling='nearest')
+        self.dec1 = dLayer(512,512,kernel_size=3,padding=1,pooling='nearest')
+        self.dec2 = dLayer(512,256,kernel_size=3,padding=1,pooling='nearest')
+        self.dec3 = dLayer(256,128,kernel_size=3,padding=1,pooling='nearest')
+        self.dec4 = dLayer(128,64,kernel_size=3,padding=1,pooling='nearest')
+        self.dec5 = dLayer(64,32,kernel_size=3,padding=1,pooling='nearest')
 
         self.final_conv = nn.Conv2d(32,nOutputs,3,1,1,bias=True)
         self.final_activation = nn.Tanh()
