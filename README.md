@@ -21,6 +21,7 @@ We run our DEMO on Anaconda Environment with following packages:
 - Qdarkstyle
 - PyQt5
 - Numpy
+- gdown
 
 
 ## Get started
